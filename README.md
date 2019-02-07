@@ -36,7 +36,7 @@ View    Nice   URL                                                              
 ```
 
 ## Roadmap
-- [ ] Use some CLI library.
+- [x] Use some CLI library.
 - [ ] Fix what golint point out.
 - [ ] Test `test` `vet` `fmt` by TravisCI.
 - [ ] Measure test coverate.
