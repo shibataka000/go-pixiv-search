@@ -37,7 +37,7 @@ View    Nice   URL                                                              
 
 ## Roadmap
 - [x] Use some CLI library.
-- [ ] Fix what golint point out.
+- [x] Fix what golint point out.
 - [ ] Test `test` `vet` `fmt` by TravisCI.
 - [ ] Measure test coverate.
 - [ ] Make release binaries for multi platform and attach them to GitHub.

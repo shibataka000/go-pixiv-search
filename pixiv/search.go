@@ -10,6 +10,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
+// GetNumberOfIllusts return number of illusts by keyword.
 func GetNumberOfIllusts(keyword string) (int, error) {
 	url := fmt.Sprintf("https://www.pixiv.net/search.php?s_mode=s_tag&word=%v", keyword)
 
@@ -29,6 +30,7 @@ func GetNumberOfIllusts(keyword string) (int, error) {
 	return numOfIllusts, nil
 }
 
+// Search return illusts by keyword synchronously.
 func Search(keyword string) (IllustList, error) {
 	illustList := IllustList{}
 
@@ -41,6 +43,7 @@ func Search(keyword string) (IllustList, error) {
 	return illustList, nil
 }
 
+// SearchAsync return illusts by keyword asynchronously.
 func SearchAsync(keyword string) chan Illust {
 	c := make(chan Illust)
 
@@ -94,6 +97,7 @@ func SearchAsync(keyword string) chan Illust {
 	return c
 }
 
+// getIllustScore return "nice" and "view" score of illust.
 func getIllustScore(illustID string) (*IllustScore, error) {
 	url := fmt.Sprintf("https://www.pixiv.net/member_illust.php?mode=medium&illust_id=%v", illustID)
 	log.Printf("Get %v", url)
