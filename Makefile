@@ -15,6 +15,9 @@ dep:
 fmt:
 	goimports -w $(FMT_TARGET)
 
+checkfmt:
+	test ! -n "$(shell goimports -l $(FMT_TARGET))"
+
 vet:
 	go vet $(VET_TARGET)
 	golint $(VET_TARGET)
@@ -22,7 +25,9 @@ vet:
 test:
 	go test $(TEST_TARGET)
 
-build: vet test
+ci: checkfmt vet
+
+build: checkfmt vet test
 	go build
 
-.PHONY: default setup dep fmt vet test build
+.PHONY: default setup dep fmt checkfmt vet test ci build

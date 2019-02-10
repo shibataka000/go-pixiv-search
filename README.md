@@ -1,5 +1,7 @@
 # [WIP] pixiv-search
 
+[![CircleCI](https://circleci.com/gh/shibataka000/pixiv-search.svg?style=svg)](https://circleci.com/gh/shibataka000/pixiv-search)
+
 ## Description
 Show [pixiv](https://www.pixiv.net/) illusts ranking.
 
@@ -38,7 +40,7 @@ View    Nice   URL                                                              
 ## Roadmap
 - [x] Use some CLI library.
 - [x] Fix what golint point out.
-- [ ] Test `test` `vet` `fmt` by TravisCI.
+- [x] Test `test` `vet` `fmt` by CircleCI.
 - [ ] Measure test coverate.
 - [ ] Make release binaries for multi platform and attach them to GitHub.
 - [ ] Use godoc.

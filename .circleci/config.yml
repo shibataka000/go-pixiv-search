@@ -1,0 +1,10 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.9
+    working_directory: /go/src/github.com/shibataka000/pixiv-search
+    steps:
+      - checkout
+      - run: make setup
+      - run: make ci
