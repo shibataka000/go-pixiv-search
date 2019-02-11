@@ -42,7 +42,7 @@ View    Nice   URL                                                              
 - [x] Fix what golint point out.
 - [x] Test `test` `vet` `fmt` by CircleCI.
 - [ ] Measure test coverate.
-- [ ] Make release binaries for multi platform and attach them to GitHub.
+- [x] Make release binaries for multi platform and attach them to GitHub.
 - [ ] Use godoc.
 - [ ] Use ecosystem. e.g. https://goreportcard.com .
 
