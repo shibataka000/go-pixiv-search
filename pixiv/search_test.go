@@ -22,7 +22,7 @@ func TestGetNumberOfIllusts(t *testing.T) {
 	for _, testData := range testDataGetNumberOfIllusts {
 		actual, err := GetNumberOfIllusts(testData.Keyword)
 		if err != nil {
-			t.Errorf("GetNumberOfIllusts(\"%s\"): Error has occured: %v", testData.Keyword, err)
+			t.Errorf("GetNumberOfIllusts(\"%s\"): Error has occurred: %v", testData.Keyword, err)
 		}
 		if actual < testData.Expected {
 			t.Errorf("GetNumberOfIllusts(\"%s\"): Excepted is over %d but actual is %d", testData.Keyword, testData.Expected, actual)
@@ -109,7 +109,7 @@ func TestSearch(t *testing.T) {
 	for _, testData := range testDataSearch {
 		illustList, err := Search(testData.Keyword)
 		if err != nil {
-			t.Errorf("Search(\"%s\"): Error has occured: %s", testData.Keyword, err)
+			t.Errorf("Search(\"%s\"): Error has occurred: %s", testData.Keyword, err)
 		}
 
 		numOfIllusts, _ := GetNumberOfIllusts(testData.Keyword)
