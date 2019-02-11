@@ -14,7 +14,7 @@ This tool does'nt work. This tool show only newest 400 illusts ranking because p
 
 ## Install
 ```
-go install github.com/shibataka000/pixiv-search
+go get github.com/shibataka000/pixiv-search
 ```
 
 ## Usage
