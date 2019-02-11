@@ -20,6 +20,7 @@ func main() {
 	app.Name = "pixiv-seawrch"
 	app.Usage = "Show pixiv illusts ranking."
 	app.UsageText = "pixiv-search keyword"
+	app.Version = "v0.0.1"
 	app.Action = func(c *cli.Context) error {
 		if c.NArg() != 1 {
 			cli.ShowAppHelpAndExit(c, 1)
