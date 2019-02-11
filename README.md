@@ -1,6 +1,7 @@
 # [WIP] pixiv-search
 
 [![CircleCI](https://circleci.com/gh/shibataka000/pixiv-search.svg?style=svg)](https://circleci.com/gh/shibataka000/pixiv-search)
+[![Go Report Card](https://goreportcard.com/badge/github.com/shibataka000/pixiv-search)](https://goreportcard.com/report/github.com/shibataka000/pixiv-search)
 
 ## Description
 Show [pixiv](https://www.pixiv.net/) illusts ranking.
